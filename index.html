@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-poppins">
+
+  <!-- HEADER -->
+  <header class="bg-[#EEEDDE] pt-[63px]">
+    <!-- NAV -->
+    <nav>
+      <div class="max-w-[1166px] mx-auto">
+        <div class="flex justify-between items-center">
+          <img src="./assets/logo.png" alt="Logo">
+
+          <ul class="flex gap-[100px]">
+            <li class="relative text-[#203239] font-light hover:font-semibold">
+              Home
+            </li>
+            <li class="relative text-[#203239] font-light hover:font-semibold">
+              About
+            </li>
+            <li class="relative text-[#203239] font-light hover:font-semibold">
+              Properties
+            </li>
+            <li class="relative text-[#203239] font-light hover:font-semibold">
+              Contact
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="max-w-[1166px] mx-auto">
+      <div class="flex justify-between items-center py-[100px]">
+
+        <!-- TEXT -->
+        <div>
+          <h1 class="text-[56px] font-semibold text-[#203239] leading-[150%] w-[777px]">
+            Find the Family Home You Want
+          </h1>
+
+          <p class="text-[16px] font-light text-[rgba(32,50,57,0.55)] leading-[30px] w-[544px] mt-2 mb-5">
+            Providing housing for your family with various variants
+            strategic choices and locations in your city
+            in a simpler way.
+          </p>
+
+          <!-- SEARCH -->
+          <div class="relative flex items-center">
+            <i class="fa-solid fa-location-dot absolute left-4 text-[20px] text-[#f6762e]"></i>
+
+            <input
+              type="text"
+              placeholder="Search location, properties, residential group"
+              class="w-[508px] h-[70px] rounded-[15px] pl-[56px] outline-none"
+            />
+
+            <button
+              class="ml-3 w-[130px] h-[70px] rounded-[15px] bg-white text-[rgba(32,50,57,0.55)]
+                     hover:bg-[#F6762E] hover:text-white transition-all">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div>
+          <img src="./assets/home.png" alt="main-image" class="w-full">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="mt-5">
+    <div class="max-w-[1166px] mx-auto">
+
+      <h2 class="text-[36px] font-semibold text-[#203239] leading-[150%] w-[533px] mb-[50px]">
+        Easy and Fast Property Purchase Stages
+      </h2>
+
+      <div class="flex gap-[30px]">
+
+        <!-- CARD -->
+        <div
+          class="relative bg-white w-[300px] p-5 rounded-[15px]
+                 hover:shadow-lg hover:-translate-y-1 transition-all">
+
+          <span class="absolute left-0 top-[17px] w-[8px] h-[30px] bg-[#FF7527] rounded-[15px]"></span>
+
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Select Properties</h3>
+            <h4 class="text-[#F6762E]">1</h4>
+          </div>
+
+          <p class="text-[16px] font-light text-[rgba(32,50,57,0.55)] leading-[30px] my-5">
+            Find the property you and your family want that fits your criteria.
+          </p>
+
+          <div class="flex items-center gap-2 cursor-pointer">
+            <button class="font-medium">Read More</button>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="relative bg-white w-[300px] p-5 rounded-[15px]
+                 hover:shadow-lg hover:-translate-y-1 transition-all">
+
+          <span class="absolute left-0 top-[17px] w-[8px] h-[30px] bg-[#FF7527] rounded-[15px]"></span>
+
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Process Booking</h3>
+            <h4 class="text-[#F6762E]">2</h4>
+          </div>
+
+          <p class="text-[16px] font-light text-[rgba(32,50,57,0.55)] leading-[30px] my-5">
+            Payment in the form of a sum of money as a commitment.
+          </p>
+
+          <div class="flex items-center gap-2 cursor-pointer">
+            <button class="font-medium">Read More</button>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="relative bg-white w-[300px] p-5 rounded-[15px]
+                 hover:shadow-lg hover:-translate-y-1 transition-all">
+
+          <span class="absolute left-0 top-[17px] w-[8px] h-[30px] bg-[#FF7527] rounded-[15px]"></span>
+
+          <div class="flex justify-between items-center">
+            <h3 class="font-semibold">Mortgage & Certification</h3>
+            <h4 class="text-[#F6762E]">3</h4>
+          </div>
+
+          <p class="text-[16px] font-light text-[rgba(32,50,57,0.55)] leading-[30px] my-5">
+            Financing schemes and certification process.
+          </p>
+
+          <div class="flex items-center gap-2 cursor-pointer">
+            <button class="font-medium">Read More</button>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
